@@ -1,6 +1,8 @@
 <h1> <%= @party.name %> </h1>
 <h3> <%= @party.date %> </h3>
 <p>Budget: $<%= @party.budget %></p>
+<p>Category: <%=@party.category.name%></p>
+<p>Supplies: <%=@supplies.each{|supply| puts supply.name}%></p>
 
 
 <p><i><%= @party.private? %> Party</i></p>
